@@ -1,0 +1,18 @@
+.SignupPopoup {
+  background-color: rgb(117, 190, 192);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.NavBar-welcome {
+  color: grey;
+}
+
+div {
+  border: 1px solid grey;
+  margin: 5px;
+  padding: 5px;
+}

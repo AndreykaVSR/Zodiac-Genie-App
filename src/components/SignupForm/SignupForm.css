@@ -1,0 +1,33 @@
+.SignupPopoup {
+    width: 270px;
+    height: 475px;
+    border-radius: 7px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    box-shadow: rgb(46, 46, 46) 7px 7px 20px 1px;
+  }
+
+input {
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+    height: 20px;
+}
+
+header.header-footer {
+    font-size: 20px;
+}
+
+button {
+    border-radius: 3px;
+    background-color: aliceblue;
+    font-size: 15px;
+    widows: 200px;
+    height: 30px;
+    /* margin: 5px; */
+    box-shadow: rgb(65, 65, 65) 7px 7px 7px 2px;
+}
+

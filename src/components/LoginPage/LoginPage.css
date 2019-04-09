@@ -1,0 +1,16 @@
+.LoginPage {
+  width: 270px;
+  height: 250px;
+  border-radius: 7px;
+  background-color: rgb(117, 190, 192);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  box-shadow: rgb(46, 46, 46) 7px 7px 20px 1px;
+}
+
+.NavBar-welcome {
+  color: grey;
+}
