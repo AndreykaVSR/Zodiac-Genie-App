@@ -7,13 +7,15 @@
 #### Wireframes & ERD:
 
 
-#### 1. Landing Page.
+#### 1. ERD.
 
- ![Project ERD](url "/images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png")
+ ![Project ERD](/images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png)
+ 
+ ![Project ERD](https://imgur.com/pwylj71")
 
 #### 2. Landing Page.
 
- ![Landing Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png")
+ ![Landing Page](url /images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png)
  
  
 #### 3. SignUp Page.
