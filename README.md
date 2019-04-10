@@ -9,36 +9,36 @@
 
 #### 1. Landing Page.
 
- ![Project ERD](url "images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png")
+ ![Project ERD](url "/images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png")
 
 #### 2. Landing Page.
 
- ![Landing Page](url "images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png")
+ ![Landing Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png")
  
  
 #### 3. SignUp Page.
 
- ![SignUp Page.](url "images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-SignUp.png")
+ ![SignUp Page.](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-SignUp.png")
  
  
 #### 4. LogIn Page.
 
- ![LogIn Page.](url "images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-LogIn.png")
+ ![LogIn Page.](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-LogIn.png")
  
  
 #### 5. Horoscope or Cookie Page.
 
- ![Horoscope or Cookie Page](url "images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope-or-Cookie.png")
+ ![Horoscope or Cookie Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope-or-Cookie.png")
  
  
 #### 6. Horoscope Page.
 
- ![Horoscope Page](url "images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope.png")
+ ![Horoscope Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope.png")
  
  
 #### 7. Horoscope or Cookie Page.
 
- ![Fortune Cookie Page](url "images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Cookie.png")
+ ![Fortune Cookie Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Cookie.png")
  
  
 #### 8. Trello Link:
