@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+// import { Route } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
+import CurrentFortune from './components/CurrentFortune/CurrentFortune';
 import './App.css';
 
 
@@ -16,20 +18,38 @@ const horoscope = {
 
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header>
-        <NavBar
-        horoscope={horoscope[this.props.health]}
-        />
-        <SignupPopup
-        />
-        <LoginPage
-        />
-      </div>
-    );
+  // constructor() {
+  //   super();
+    // this.state = { horoscope };
+
+  //   getNewHoroscope();
+  //     return {
+  //       horoscope: ['']
+  //     }
+  // };
+
+
+    render() {
+      return (
+        <div className="App">
+          <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header>
+          <NavBar
+          horoscope={horoscope[this.props.health]}
+          />
+          <SignupPopup
+          />
+          {/* <Route exact path='/login' render={() =>  */}
+              <LoginPage
+                 handleSignupOrLogin={this.handleSignupOrLogin}
+              />
+          {/* }/> */}
+          <CurrentFortune
+            // { ...this.state.horoscope }
+          />
+        </div>
+      );
+    }
   }
-}
+// }
 
 export default App;
