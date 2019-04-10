@@ -10,37 +10,35 @@
 #### 1. ERD.
 
  ![Project ERD](/images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png)
- 
- ![Project ERD](https://imgur.com/pwylj71")
 
 #### 2. Landing Page.
 
- ![Landing Page](url /images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png)
+ ![Landing Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png)
  
  
 #### 3. SignUp Page.
 
- ![SignUp Page.](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-SignUp.png")
+ ![SignUp Page.](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-SignUp.png)
  
  
 #### 4. LogIn Page.
 
- ![LogIn Page.](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-LogIn.png")
+ ![LogIn Page.](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-LogIn.png)
  
  
 #### 5. Horoscope or Cookie Page.
 
- ![Horoscope or Cookie Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope-or-Cookie.png")
+ ![Horoscope or Cookie Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope-or-Cookie.png)
  
  
-#### 6. Horoscope Page.
+#### 6. Horoscope Choice Page.
 
- ![Horoscope Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope.png")
+ ![Horoscope Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope.png)
  
  
-#### 7. Horoscope or Cookie Page.
+#### 7. Fortune Cookie Choice Page.
 
- ![Fortune Cookie Page](url "/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Cookie.png")
+ ![Fortune Cookie Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Cookie.png)
  
  
 #### 8. Trello Link:
