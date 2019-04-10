@@ -1,3 +1,62 @@
+# **Welcome to ZODIAC GENIE app by Andrey Rathbone Sokolov.**
+
+### This is a Capstone Project at General Assembly Web Development Immersive course.
+
+#### Build in React.js on the front-end and Node.js, Express, MongoDB and JavaScript on the backend.
+
+#### Wireframes:
+
+#### 1. Landing Page.
+
+ ![Here are some Wireframes for the App](url "images/ERD+Wireframes/Zodiac Gegie App. Wireframes..png")
+ 
+ 
+#### 2. SignUp Page.
+
+ ![Here are some Wireframes for the App](url "images/ERD+Wireframes/Zodiac Gegie App. Wireframes - Sign Up.png")
+ 
+ 
+#### 3. SignUp Page.
+
+ ![Here are some Wireframes for the App](url "images/ERD+Wireframes/Zodiac Gegie App. Wireframes - Log In.png")
+ 
+ 
+#### 7. Trello Link:
+
+[Trello](https://trello.com/b/C62GhUbX)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
