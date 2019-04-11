@@ -3,7 +3,13 @@ const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
 
+
 const app = express();
+
+// require and configure dotenv.
+require('dotenv').config();
+// connect to the database with Mongoose
+require('./config/database');
 
 app.use(logger('dev'));
 app.use(express.json());

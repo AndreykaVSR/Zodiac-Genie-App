@@ -25,7 +25,7 @@ class CurrentFortune extends Component {
   
     render() {
       return (
-        <div className="LoginPage"> 
+        <div className="CurrentFortune"> 
             <header className="header-footer">Here is Your Horoscope for Today!</header>
             <div className="form-group">
             { this.state.health }

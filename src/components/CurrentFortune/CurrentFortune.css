@@ -1,0 +1,12 @@
+.CurrentFortune {
+    width: 270px;
+    height: 250px;
+    border-radius: 7px;
+    background-color: rgba(117, 190, 192, .5);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    box-shadow: rgba(46, 46, 46, .7) 7px 7px 20px 1px;
+}
