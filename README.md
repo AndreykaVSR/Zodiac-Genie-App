@@ -9,7 +9,7 @@
 
 ##### 1. ERD. There are two models in this project, User and Horoscope prediction model. It is 1:M relationship.
 
- ![Project ERD](/images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png)
+ ![Project ERD](/src/images/ERD+Wireframes/Zodiac-Gegie-App-ERD.png)
 
 ##### 2. Landing Page. The first thing the visitor sees on the fron page of the App is the 12 zodiac symbols. When clicked on any symbols, the visitor is prompted to SignUp or LogIn (see next slides).
 
