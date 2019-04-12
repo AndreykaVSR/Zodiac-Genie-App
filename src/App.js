@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-// import { Route } from 'react-router-dom';
+import { Route, /* Switch */ } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
 import CurrentFortune from './components/CurrentFortune/CurrentFortune';
+import AnyDayFortune from './components/AnyDayFortune/AnyDayFortune';
 import './App.css';
+
 
 
 const horoscope = {
@@ -29,27 +31,55 @@ class App extends Component {
   // };
 
 
-    render() {
-      return (
-        <div className="App">
+  handleLogout = () => {
+    // userService.logout();
+    this.setState({ user: null });
+  }
+
+  handleSignupOrLogin = () => {
+    // this.setState({user: userService.getUser()});
+  }
+
+  async componentDidMount() {
+    // const user = userService.getUser();
+    this.setState({ horoscope /*, , user */ });
+  }
+
+  render() {
+    return (
+      <div className="App">
+        {/* <Switch> */}
           <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header>
           <NavBar
-          horoscope={horoscope[this.props.health]}
+            horoscope={horoscope[this.props.health]}
           />
-          <SignupPopup
-          />
-          {/* <Route exact path='/login' render={() =>  */}
-              <LoginPage
-                 handleSignupOrLogin={this.handleSignupOrLogin}
-              />
-          {/* }/> */}
-          <CurrentFortune
-            // { ...this.state.horoscope }
-          />
-        </div>
-      );
-    }
+          <Route exact path='/signup' render={({ history }) => 
+            <SignupPopup
+              history={history}
+            />
+          }/> 
+          <Route exact path='/login' render={() => 
+            <LoginPage
+              handleLogout={this.handleLogout}
+              handleSignupOrLogin={this.handleSignupOrLogin}
+            />
+          }/>
+          <Route exact path='/horoscope' render={(props) => (
+            <CurrentFortune
+              { ...props}
+            />
+          )}/>
+          <Route exact path='/horoscope' render={(props) => (  
+            <AnyDayFortune
+              { ...props}
+              // horoscope={horoscope[this.props.health]}
+            />
+          )}/>
+        {/* </Switch> */}
+      </div>
+    );
   }
+}
 // }
 
 export default App;

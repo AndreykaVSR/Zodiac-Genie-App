@@ -1,15 +1,28 @@
-/* .NavBar {
+.NavBar-text {
+  /* background-color: rgba(127, 185, 202, .7); */
+  color: rgb(224, 215, 215);
+  font-size: 25px;
+  font-weight: bold;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 0 0 20px;
+  padding: 20px;
 }
 
 .NavBar-link {
+  color: rgb(224, 215, 215);
+  font-size: 20px;
+  font-weight: bold;
+  /* display: flex; */
+  /* justify-content: right; */
   margin: 0 10px;
-} */
-/* 
-div {
-  border: 1px solid grey;
+  /* border: 1px solid grey; */
+}
+
+/* div.NavBar-Link {
+  display: inline;
+  /* width: 400px; */
+  /* border: 1px solid grey;
   margin: 5px;
   padding: 5px;
-} */
+} */ 

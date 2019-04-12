@@ -2,7 +2,7 @@
   width: 270px;
   height: 250px;
   border-radius: 7px;
-  background-color: rgba(117, 190, 192, .5);
+  background-color: rgba(132, 147, 189, 0.5);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

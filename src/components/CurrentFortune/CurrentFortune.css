@@ -1,12 +1,19 @@
 .CurrentFortune {
-    width: 270px;
+    width: 40%;
     height: 250px;
     border-radius: 7px;
-    background-color: rgba(117, 190, 192, .5);
+    background-color: rgba(132, 147, 189, 0.5);
     display: flex;
-    flex-flow: column nowrap;
+    /* flex-flow: column nowrap; */
+    flex-flow: row;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 50px auto;
-    box-shadow: rgba(46, 46, 46, .7) 7px 7px 20px 1px;
+    /* box-shadow: rgba(46, 46, 46, .7) 7px 7px 20px 1px; */
+}
+
+.horoscopeHeader {
+    font-size: 27px;
+    color: rgb(203, 239, 253);
+
 }
