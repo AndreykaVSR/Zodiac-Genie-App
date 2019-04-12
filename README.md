@@ -13,32 +13,32 @@
 
 ##### 2. Landing Page. The first thing the visitor sees on the fron page of the App is the 12 zodiac symbols. When clicked on any symbols, the visitor is prompted to SignUp or LogIn (see next slides).
 
- ![Landing Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png)
+ ![Landing Page](/src/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes.png)
  
  
 #### 3. SignUp Page. First time visitor will need SugnUp to create an account by providing basic information and able to create password here.
 
- ![SignUp Page.](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-SignUp.png)
+ ![SignUp Page.](/src/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-SignUp.png)
  
  
 #### 4. LogIn Page. Returning visitor Logs In with email and password that is already in the database.
 
- ![LogIn Page.](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-LogIn.png)
+ ![LogIn Page.](/src/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-LogIn.png)
  
  
 #### 5. Horoscope or Cookie Page. Once Loged In, the user is offered a choice between a Horoscope or a Fortune Cookie.
 
- ![Horoscope or Cookie Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope-or-Cookie.png)
+ ![Horoscope or Cookie Page](/src/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope-or-Cookie.png)
  
  
 #### 6. Horoscope Choice Page. Horoscope choice will render a current Horoscope for the current day and offer to search/lookUp a horoscope for any other days in the past or the future.
 
- ![Horoscope Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope.png)
+ ![Horoscope Page](/src/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Horoscope.png)
  
  
 #### 7. Fortune Cookie Choice Page. Fortune Cookie choice offers a rendomized fortune. User can get up to three (3) fortune cookies per day.
 
- ![Fortune Cookie Page](/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Cookie.png)
+ ![Fortune Cookie Page](/src/images/ERD+Wireframes/Zodiac-Gegie-App-Wireframes-Cookie.png)
  
 #### You can track progress on Trello board by following this [Trello](https://trello.com/b/C62GhUbX) link.
 
