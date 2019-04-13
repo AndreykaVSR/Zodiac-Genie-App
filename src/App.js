@@ -20,29 +20,15 @@ const horoscope = {
 };
 
 
-// class Aztro extends Component {
-//   constructor(props){
-//       super(props);
-//       this.state = {
-//         json: {}
-//       }
-//   }
-
-//   componentDidMount () {
-//       const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-//       fetch(URL, {
-//           method: 'POST'
-//       }).then(response => response.json())
-//       .then(json => { this.setState({json}); });
-//   }
-// }
 
 
 
 class App extends Component {
-  // constructor() {
-  //   super();
-    // this.state = { horoscope };
+  
+  state = {
+    user: null,
+    horoscope: horoscope
+  }
 
   //   getNewHoroscope();
   //     return {
@@ -81,15 +67,18 @@ class App extends Component {
         {/* <Switch> */}
           {/* <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header> */}
           <NavBar
-            horoscope={horoscope[this.props.health]}
+            user={this.state.user}
+            // horoscope={horoscope[this.props.health]}
           />
           <Route path='/signup' render={({ history }) => 
             <SignupPopup
               history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/> 
-          <Route path='/login' render={() => 
+          <Route path='/login' render={({ history }) => 
             <LoginPage
+              history={history}
               handleLogout={this.handleLogout}
               handleSignupOrLogin={this.handleSignupOrLogin}
             />

@@ -27,6 +27,7 @@ class SignupForm extends Component {
       await userService.signup(this.state); 
       // Let <App> know a user has signed up!
       this.props.handleSignupOrLogin();
+      this.props.history.push('/horoscope');
     } catch (err) {
       // Invalid user data (probably duplicate email)
       this.props.updateMessage(err.message);
@@ -34,7 +35,7 @@ class SignupForm extends Component {
   }
 
   isFormInvalid() {
-    return !(this.state.name && this.state.email && this.state.password === this.state.passwordConf);
+    return !(this.state.name && this.state.dob && this.state.email && this.state.password === this.state.passwordConf);
   }
 
   render() {
@@ -44,34 +45,69 @@ class SignupForm extends Component {
         <form className="form-horizontal" onSubmit={this.handleSubmit} >
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Type Your Full Name Here" value={this.state.name} name="name" onChange={this.handleChange} />
+              <input 
+                type="text" 
+                className="form-control" 
+                placeholder="Type Your Full Name Here" 
+                value={this.state.name} 
+                name="name" 
+                onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="text" className="form-control" placeholder="Type Your D.O.B. Here" value={this.state.dob} name="dob" onChange={this.handleChange} />
+              <input 
+              type="text" 
+              className="form-control" 
+              placeholder="Type Your D.O.B. Here" 
+              value={this.state.dob} 
+              name="dob" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="email" className="form-control" placeholder="Type Your Email Here" value={this.state.email} name="email" onChange={this.handleChange} />
+              <input 
+              type="email" 
+              className="form-control" 
+              placeholder="Type Your Email Here" 
+              value={this.state.email} 
+              name="email" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Type Your Password Here" value={this.state.password} name="password" onChange={this.handleChange} />
+              <input 
+              type="password" 
+              className="form-control" 
+              placeholder="Type Your Password Here" 
+              value={this.state.password} 
+              name="password" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12">
-              <input type="password" className="form-control" placeholder="Confirm Your Password" value={this.state.passwordConf} name="passwordConf" onChange={this.handleChange} />
+              <input 
+              type="password" 
+              className="form-control" 
+              placeholder="Confirm Your Password" 
+              value={this.state.passwordConf} 
+              name="passwordConf" 
+              onChange={this.handleChange} />
             </div>
           </div>
           <div className="form-group">
             <div className="col-sm-12 text-center">
-              <button className="btn" disabled={this.isFormInvalid()}>Sign Up</button>
+              <button 
+              className="btn" 
+              disabled={this.isFormInvalid()}>Sign Up</button>
               &nbsp;&nbsp;
-              <button className="btnCancel"><Link className="btnCancel" to='/'>Cancel</Link></button>
+              <button 
+                className="btnCancel">
+                <Link className="btnCancel" to='/'>Cancel</Link>
+              </button>
             </div>
           </div>
         </form>

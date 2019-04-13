@@ -10,7 +10,7 @@ function signup(user) {
   })
   .then(res => {
     if (res.ok) return res.json();
-    // throw new Error('Sorry, Genie already has a master with this email! Try a different one or go to LogIn!');
+    throw new Error('Sorry, Genie already has a master with this email! Try a different one or go to LogIn!');
   })
   // Parameter destructuring!
   .then(({ token }) => {

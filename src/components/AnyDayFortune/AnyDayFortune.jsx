@@ -31,14 +31,14 @@ class AnyDayFortune extends Component {
             <input type="date" className="NewDateForm" value={this.state.date} name="date" onChange={this.handleChange} />
           </div>
           <div className="AnyDayFortune"> 
-              <header className="horoscopeHeader">Your wish is my command... Here's Your Horoscope for ... {Date}!</header>
+              <header className="horoscopeHeader">Your wish is my command... Here's Your Horoscope for ... !</header>
               <div className="form-group">
-                { this.state.health }
+                {/* { this.state.health }
                 { this.state.personalLife }
                 { this.state.travel }
                 { this.state.profession }
                 { this.state.luck }
-                { this.state.emotions }
+                { this.state.emotions } */}
               </div>
           </div>
         </div>
