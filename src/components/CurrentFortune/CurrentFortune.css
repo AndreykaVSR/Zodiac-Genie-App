@@ -4,7 +4,7 @@
     border-radius: 7px;
     background-color: rgba(132, 147, 189, 0.5);
     display: flex;
-    /* flex-flow: column nowrap; */
+    flex-flow: column nowrap;
     flex-flow: row;
     justify-content: center;
     /* align-items: center; */

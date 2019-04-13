@@ -12,5 +12,14 @@
 }
 
 .NavBar-welcome {
-  color: grey;
+  color: rgb(155, 153, 153);
+}
+
+header.header-footer {
+  color: rgb(223, 221, 221);
+  font-weight: bold;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  font-size: 25px;
 }

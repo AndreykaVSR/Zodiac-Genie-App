@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
+const auth = require('./routes/api/users')
 
 
 const app = express();
@@ -26,6 +27,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
   });
+
+app.use('/api', auth);
   
 
   // Configure to use port 3001 instead of 3000 during

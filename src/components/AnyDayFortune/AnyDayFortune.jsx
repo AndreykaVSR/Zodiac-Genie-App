@@ -25,16 +25,22 @@ class AnyDayFortune extends Component {
   
     render() {
       return (
-        <div className="AnyDayFortune"> 
-            <header className="horoscopeHeader">Here's Your Horoscope for ... {Date}!</header>
-            <div className="form-group">
-            { this.state.health }
-            { this.state.personalLife }
-            { this.state.travel }
-            { this.state.profession }
-            { this.state.luck }
-            { this.state.emotions }
-            </div>
+        <div className="col-sm-12">
+          <div className="NewDateSearchForm">
+            <label className="SearchHoroscopeDate">Search for a specific Date:</label>
+            <input type="date" className="NewDateForm" value={this.state.date} name="date" onChange={this.handleChange} />
+          </div>
+          <div className="AnyDayFortune"> 
+              <header className="horoscopeHeader">Your wish is my command... Here's Your Horoscope for ... {Date}!</header>
+              <div className="form-group">
+                { this.state.health }
+                { this.state.personalLife }
+                { this.state.travel }
+                { this.state.profession }
+                { this.state.luck }
+                { this.state.emotions }
+              </div>
+          </div>
         </div>
       );
     }
