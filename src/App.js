@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, /* Switch */ } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
@@ -30,11 +30,11 @@ class App extends Component {
     horoscope: horoscope
   }
 
-  //   getNewHoroscope();
-  //     return {
-  //       horoscope: ['']
-  //     }
-  // };
+  getNewHoroscope(){
+    return {
+      horoscope: ['']
+    }
+  };
 
 
   handleLogout = () => {
@@ -48,7 +48,7 @@ class App extends Component {
 
   async componentDidMount() {
     const user = userService.getUser();
-    this.setState({ horoscope, user });
+    this.setState({ /*horoscope,*/ user });
   }
 
   render() {
@@ -68,14 +68,14 @@ class App extends Component {
           {/* <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header> */}
           <NavBar
             user={this.state.user}
-            // horoscope={horoscope[this.props.health]}
+            
           />
           <Route path='/signup' render={({ history }) => 
             <SignupPopup
               history={history}
-              handleSignupOrLogin={this.handleSignupOrLogin}
             />
-          }/> 
+          }
+          /> 
           <Route path='/login' render={({ history }) => 
             <LoginPage
               history={history}
@@ -83,16 +83,22 @@ class App extends Component {
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
-          <Route path='/horoscope' render={(props) => (
-            <CurrentFortune
-              { ...props }
-            />
+          <Route exact path='/horoscope' render={(props) => (
+            userService.getUser() ? 
+              <CurrentFortune
+                { ...props }
+              />
+              :
+            <Redirect to='/login' />
           )}/>
-          <Route path='/horoscope' render={(props) => (  
-            <AnyDayFortune
-              { ...props }
-              // horoscope={horoscope[this.props.health]}
-            />
+          <Route exact path='/horoscope' render={(props) => ( 
+            userService.getUser() ? 
+              <AnyDayFortune
+                { ...props }
+                horoscope={horoscope[this.props.health]}
+              />
+              :
+              <Redirect to='/login' />
           )}/>
         {/* </Switch> */}
       </div>

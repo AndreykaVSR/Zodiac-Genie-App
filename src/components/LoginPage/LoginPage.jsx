@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-// import userService from '../../components/userService/userService';
+import userService from '../../utils/userService';
 import './LoginPage.css';
 
 class LoginPage extends Component {
@@ -21,7 +21,7 @@ class LoginPage extends Component {
     e.preventDefault();
     try {
       // Update to call login instead of signup
-      // await userService.login(this.state);        <===
+      await userService.login(this.state);     
       this.props.handleSignupOrLogin();
       this.props.history.push('/');
     } catch (err) {
