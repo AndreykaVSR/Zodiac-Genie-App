@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const horoscopeCtrl = require('../../controllers/horoscopes');
 
-router.get('/', horoscopeCtrl.horoscopes);
 router.post('/', horoscopeCtrl.createHoroscope);
 
 /*---------- Protected Routes ----------*/
