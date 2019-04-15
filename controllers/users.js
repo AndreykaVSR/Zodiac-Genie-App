@@ -20,7 +20,7 @@ async function login(res, req) {
         return res.status(401).json({err: 'bad credentials'});
       }
     });
-  }catch (err) {
+  } catch (err) {
     return res.status(401).json(err);
   }
 }

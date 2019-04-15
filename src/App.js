@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, /* Switch */ /*Redirect */ } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
 import CurrentFortune from './components/CurrentFortune/CurrentFortune';
 import AnyDayFortune from './components/AnyDayFortune/AnyDayFortune';
 import userService from './utils/userService';
+import aztroService from './utils/aztroService';
 import './App.css';
 
 
@@ -20,10 +21,14 @@ const horoscope = {
 };
 
 
-
-
-
 class App extends Component {
+  // constiructor(props) {
+  //   super(props);
+  //   this.state = {
+  //       user: null,
+  //       horoscope: horoscope
+  //   }
+  // }
   
   state = {
     user: null,
@@ -47,23 +52,19 @@ class App extends Component {
   }
 
   async componentDidMount() {
+    // fetch("POST: https://aztro.sameerkumar.website")
+    // .then((res) => res.json())
+    // .then((data) => {
+    //   console.log(data);
+    // })
+    const horoscope = await aztroService.index();
     const user = userService.getUser();
-    this.setState({ /*horoscope,*/ user });
+    this.setState({ horoscope, user });
   }
 
   render() {
     return (
       <div className="App">
-             {/* <div>
-              Current Date: {this.state.json.current_date} <br />
-              Compatibility: {this.state.json.compatibility} <br />
-              Lucky Number: {this.state.json.lucky_number} <br />
-              Lucky Time: {this.state.json.lucky_time} <br />
-              Color: {this.state.json.color} <br />
-              Date Range: {this.state.json.date_range} <br />
-              Mood: {this.state.json.mood} <br />
-              Description: {this.state.json.description} <br />
-            </div> */}
         {/* <Switch> */}
           {/* <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header> */}
           <NavBar
@@ -73,6 +74,7 @@ class App extends Component {
           <Route path='/signup' render={({ history }) => 
             <SignupPopup
               history={history}
+              handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }
           /> 
@@ -84,21 +86,22 @@ class App extends Component {
             />
           }/>
           <Route exact path='/horoscope' render={(props) => (
-            userService.getUser() ? 
+            // userService.getUser() ? 
               <CurrentFortune
+              horoscope={this.props.horoscope}
                 { ...props }
               />
-              :
-            <Redirect to='/login' />
+              // :
+            // <Redirect to='/login' />
           )}/>
           <Route exact path='/horoscope' render={(props) => ( 
-            userService.getUser() ? 
+            // userService.getUser() ? 
               <AnyDayFortune
                 { ...props }
-                horoscope={horoscope[this.props.health]}
+                horoscope={this.props.horoscope}
               />
-              :
-              <Redirect to='/login' />
+              // :
+              // <Redirect to='/login' />
           )}/>
         {/* </Switch> */}
       </div>
