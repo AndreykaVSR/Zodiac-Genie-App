@@ -66,7 +66,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <Switch> */}
+        <Switch>
           {/* <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header> */}
           <NavBar
             user={this.state.user}
@@ -91,7 +91,7 @@ class App extends Component {
 
           />
           
-        {/* </Switch> */}
+        </Switch>
       </div>
     );
   }
