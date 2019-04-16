@@ -1,9 +1,8 @@
 import React/*, { Component }*/ from 'react';
 // import { Link } from 'react-router-dom';
 // import userService from '../../components/userService/userService';
-// import aztroService from '../../../utils/aztroService.js';
+import Horoscope from '../Horoscope/Horoscope'
 import './CurrentFortune.css';
-import Horoscope from './Horoscope/Horoscope'
 
 
 // class CurrentFortune extends Component {
@@ -25,30 +24,32 @@ import Horoscope from './Horoscope/Horoscope'
 //     }
 
 const CurrentFortune = (props) => {
-
-    const horoscopesArray = props.json.map((horoscopeURL) => {
-        return <Horoscope url={horoscopeURL} />
-    })
+        console.log(props);
+    // const horoscopesArray = props.json.map((URL) => {
+    //     return <Horoscope url={URL} />
+    // })
   
     // render(
 
     return (
         <div className="CurrentFortune"> 
+            <div className="horoscopeHeader">
             <header className="horoscopeHeader">Here's Your Horoscope for Today!</header>
-            <div className="form-group">
-                    {horoscopesArray}
-
-                    {/* { this.state.health }
-                    { this.state.personalLife }
-                    { this.state.travel }
-                    { this.state.profession }
-                    { this.state.luck }
-                    { this.state.emotions } */}
+            </div>
+            <div className="horoscopeText">
+                    {/* {horoscopesArray} */}
+                <li>Current Date: {props.currentDate}</li><br/>
+                <li>Compatibility: {props.compatibility}</li><br/>
+                <li>Lucky Number: {props.luckyNumber}</li><br/>
+                <li>Lucky Time: {props.luckyTime}</li><br/>
+                <li>Color: {props.color}</li><br/>
+                <li>Date Range: {props.dateRange}</li><br/>
+                <li>Mood: {props.mood}</li><br/>
+                <li>Description: {props.description}</li><br/>
             </div>
         </div>
     );
 }
-{/* }; */}
 
 
 export default CurrentFortune;;

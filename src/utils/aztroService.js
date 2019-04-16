@@ -9,19 +9,31 @@ class Aztro extends Component {
         }
     }
 
-    componentDidMount () {
-        const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-        fetch(URL, {
-            method: 'POST'
-        }).then(response => response.json())
-        .then(json => { this.setState({json}); });
-    }
+    // componentDidMount () {
+    //     const URL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+    //     fetch(URL, {
+    //         method: 'POST'
+    //     })
+    //     .then(response => response.json())
+    //     .then(json => { 
+    //         console.log(json);
+    //         this.setState({json}); });
+    // }
 
     render() {
         return (
           <div>
-                <h1> Horoscope: </h1>
-                <CurrentFortune
+                {/* <h1> Horoscope: </h1> */}
+                
+          </div>
+        );
+    }
+}
+
+export default Aztro;
+
+
+{/* <CurrentFortune
                     Current Date= {this.state.json.current_date}
                     Compatibility= {this.state.json.compatibility}
                     Lucky Number= {this.state.json.lucky_number}
@@ -30,10 +42,4 @@ class Aztro extends Component {
                     Date Range= {this.state.json.date_range}
                     Mood= {this.state.json.mood}
                     Description= {this.state.json.description}
-                />
-          </div>
-        );
-    }
-}
-
-export default Aztro;
+                /> */}

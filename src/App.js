@@ -6,7 +6,9 @@ import LoginPage from './components/LoginPage/LoginPage';
 import CurrentFortune from './components/CurrentFortune/CurrentFortune';
 import AnyDayFortune from './components/AnyDayFortune/AnyDayFortune';
 import userService from './utils/userService';
+import horoscopeService from './utils/horoscopeService';
 import aztroService from './utils/aztroService';
+import Horoscope from './components/Horoscope/Horoscope';
 import './App.css';
 
 
@@ -57,7 +59,7 @@ class App extends Component {
     // .then((data) => {
     //   console.log(data);
     // })
-    const horoscope = await aztroService.index();
+    
     const user = userService.getUser();
     this.setState({ horoscope, user });
   }
@@ -85,24 +87,11 @@ class App extends Component {
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
-          <Route exact path='/horoscope' render={(props) => (
-            // userService.getUser() ? 
-              <CurrentFortune
-              horoscope={this.props.horoscope}
-                { ...props }
-              />
-              // :
-            // <Redirect to='/login' />
-          )}/>
-          <Route exact path='/horoscope' render={(props) => ( 
-            // userService.getUser() ? 
-              <AnyDayFortune
-                { ...props }
-                horoscope={this.props.horoscope}
-              />
-              // :
-              // <Redirect to='/login' />
-          )}/>
+          <Route exact path='/horoscope' 
+          component={Horoscope}
+
+          />
+          
         {/* </Switch> */}
       </div>
     );
@@ -111,3 +100,15 @@ class App extends Component {
 // }
 
 export default App;
+
+
+
+{/* <Route exact path='/horoscope' render={(props) => ( 
+            // userService.getUser() ? 
+              <AnyDayFortune
+                { ...props }
+                horoscope={this.props.horoscope}
+              />
+              // :
+              // <Redirect to='/login' />
+          )}/> */}

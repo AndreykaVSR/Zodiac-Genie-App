@@ -13,7 +13,18 @@
 }
 
 .horoscopeHeader {
+    /* display: flex; */
+    /* flex-flow: column nowrap; */
+    flex-flow: row;
     font-size: 27px;
     color: rgb(203, 239, 253);
+}
 
+.horoscopeText {
+    display: flex;
+    /* flex-flow: column nowrap; */
+    /* flex-flow: row; */
+    justify-content: center;
+    font-size: 15px;
+    color: rgb(203, 239, 253);
 }
