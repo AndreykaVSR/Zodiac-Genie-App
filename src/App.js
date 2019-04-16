@@ -86,9 +86,8 @@ class App extends Component {
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
-          <Route exact path='/horoscope' 
+          <Route exact path='/horoscope'
           component={Horoscope}
-
           />
           
         </Switch>

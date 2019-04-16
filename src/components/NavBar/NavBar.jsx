@@ -6,7 +6,7 @@ const NavBar = (props) => {
   let nav = props.user ?
     <div className='NavBar-Link'>
         <Link to='' className='NavBar-Link' onClick = {props.handleLogout} >LOG OUT</Link>
-        &nbsp;&nbsp;|NavBAr|&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <span className='NavBar-welcome'>WELCOME back, {props.user.name}</span>
     </div>
     :
