@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CurrentFortune from '../components/CurrentFortune/CurrentFortune';
+// import CurrentFortune from '../components/CurrentFortune/CurrentFortune';
 
 class Aztro extends Component {
     constructor(props){
@@ -31,15 +31,3 @@ class Aztro extends Component {
 }
 
 export default Aztro;
-
-
-{/* <CurrentFortune
-                    Current Date= {this.state.json.current_date}
-                    Compatibility= {this.state.json.compatibility}
-                    Lucky Number= {this.state.json.lucky_number}
-                    Lucky Time= {this.state.json.lucky_time}
-                    Color= {this.state.json.color}
-                    Date Range= {this.state.json.date_range}
-                    Mood= {this.state.json.mood}
-                    Description= {this.state.json.description}
-                /> */}

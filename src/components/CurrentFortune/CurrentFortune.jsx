@@ -1,7 +1,7 @@
 import React/*, { Component }*/ from 'react';
 // import { Link } from 'react-router-dom';
 // import userService from '../../components/userService/userService';
-import Horoscope from '../Horoscope/Horoscope'
+// import Horoscope from '../Horoscope/Horoscope'
 import './CurrentFortune.css';
 
 
@@ -38,14 +38,14 @@ const CurrentFortune = (props) => {
             </div>
             <div className="horoscopeText">
                     {/* {horoscopesArray} */}
-                <li>Current Date: {props.currentDate}</li><br/>
-                <li>Compatibility: {props.compatibility}</li><br/>
-                <li>Lucky Number: {props.luckyNumber}</li><br/>
-                <li>Lucky Time: {props.luckyTime}</li><br/>
-                <li>Color: {props.color}</li><br/>
-                <li>Date Range: {props.dateRange}</li><br/>
-                <li>Mood: {props.mood}</li><br/>
-                <li>Description: {props.description}</li><br/>
+                <li><span>Current Date:</span>  {props.currentDate}</li><br/>
+                <li><span>Compatibility:</span>  {props.compatibility}</li><br/>
+                <li><span>Lucky Number:</span>  {props.luckyNumber}</li><br/>
+                <li><span>Lucky Time:</span>  {props.luckyTime}</li><br/>
+                <li><span>Color:</span>  {props.color}</li><br/>
+                <li><span>Date Range:</span>  {props.dateRange}</li><br/>
+                <li><span>Mood:</span>  {props.mood}</li><br/>
+                <li><span className='DescriptionText'>Description:</span>  {props.description}</li><br/>
             </div>
         </div>
     );

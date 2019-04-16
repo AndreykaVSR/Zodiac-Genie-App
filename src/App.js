@@ -3,11 +3,11 @@ import { Route, /* Switch */ /*Redirect */ } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
-import CurrentFortune from './components/CurrentFortune/CurrentFortune';
-import AnyDayFortune from './components/AnyDayFortune/AnyDayFortune';
+// import CurrentFortune from './components/CurrentFortune/CurrentFortune';
+// import AnyDayFortune from './components/AnyDayFortune/AnyDayFortune';
 import userService from './utils/userService';
-import horoscopeService from './utils/horoscopeService';
-import aztroService from './utils/aztroService';
+// import horoscopeService from './utils/horoscopeService';
+// import aztroService from './utils/aztroService';
 import Horoscope from './components/Horoscope/Horoscope';
 import './App.css';
 
@@ -42,7 +42,6 @@ class App extends Component {
       horoscope: ['']
     }
   };
-
 
   handleLogout = () => {
     userService.logout();
@@ -101,14 +100,3 @@ class App extends Component {
 
 export default App;
 
-
-
-{/* <Route exact path='/horoscope' render={(props) => ( 
-            // userService.getUser() ? 
-              <AnyDayFortune
-                { ...props }
-                horoscope={this.props.horoscope}
-              />
-              // :
-              // <Redirect to='/login' />
-          )}/> */}

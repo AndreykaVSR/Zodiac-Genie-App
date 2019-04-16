@@ -1,30 +1,43 @@
 .CurrentFortune {
     width: 40%;
-    height: 250px;
+    height: 250%;
     border-radius: 7px;
     background-color: rgba(132, 147, 189, 0.5);
     display: flex;
     flex-flow: column nowrap;
-    flex-flow: row;
+    /* flex-flow: row; */
     justify-content: center;
     /* align-items: center; */
     margin: 50px auto;
-    /* box-shadow: rgba(46, 46, 46, .7) 7px 7px 20px 1px; */
 }
 
-.horoscopeHeader {
+div.horoscopeHeader {
     /* display: flex; */
     /* flex-flow: column nowrap; */
-    flex-flow: row;
+    /* flex-flow: row; */
     font-size: 27px;
-    color: rgb(203, 239, 253);
+    color: rgb(137, 200, 224);
 }
 
 .horoscopeText {
-    display: flex;
-    /* flex-flow: column nowrap; */
-    /* flex-flow: row; */
-    justify-content: center;
-    font-size: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    /* background-color: green; */
     color: rgb(203, 239, 253);
 }
+
+li {
+    /* background-color:rgba(132, 147, 189, .4); */
+    padding: 5px;
+}
+span {
+    font-weight: 700;
+    color: rgb(171, 216, 235);
+    text-decoration: underline;
+}
+
+/* .DescriptionText {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-flow: row;
+} */

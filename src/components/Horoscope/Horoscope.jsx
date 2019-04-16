@@ -21,6 +21,18 @@ class Horoscope extends Component {
         return parsedResponse;
         }
 
+    horoscopeFetchDate = async (e) => {
+        e.preventDefault();
+        const fetchHoroscopeData = await fetch('https://aztro.sameerkumar.website/?sign=aries&day=' + this.state.date, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            }
+        })
+        const parsedResponse = await fetchHoroscopeData.json();
+        this.setState({customHoroscope: parsedResponse});
+        console.log(this.state.customHoroscope)
+        }
 
     componentDidMount () { 
         this.horoscopeFetch().then((data) => {
