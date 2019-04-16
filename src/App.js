@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, /* Switch */ /*Redirect */ } from 'react-router-dom';
+import { Route, Switch, /*Redirect*/ } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
