@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Switch, /*Redirect*/ } from 'react-router-dom';
+import { Route, /* Switch */ /*Redirect */ } from 'react-router-dom';
 import NavBar from './components/NavBar/NavBar';
 import SignupPopup from './components/SignupPopup/SignupPopup';
 import LoginPage from './components/LoginPage/LoginPage';
@@ -50,6 +50,7 @@ class App extends Component {
 
   handleSignupOrLogin = () => {
     this.setState({user: userService.getUser()});
+    console.log("loged in", this.state.user);
   }
 
   async componentDidMount() {
@@ -66,7 +67,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Switch>
+        {/* <Switch> */}
           {/* <header className='header-footer'>Z O D I A C &nbsp;&nbsp;&nbsp;  G E N I E</header> */}
           <NavBar
             user={this.state.user}
@@ -82,15 +83,15 @@ class App extends Component {
           <Route path='/login' render={({ history }) => 
             <LoginPage
               history={history}
-              handleLogout={this.handleLogout}
               handleSignupOrLogin={this.handleSignupOrLogin}
             />
           }/>
-          <Route exact path='/horoscope'
+          <Route exact path='/horoscope' 
           component={Horoscope}
+
           />
           
-        </Switch>
+        {/* </Switch> */}
       </div>
     );
   }

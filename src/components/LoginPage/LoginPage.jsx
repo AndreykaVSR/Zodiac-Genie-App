@@ -20,13 +20,13 @@ class LoginPage extends Component {
   handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      // Update to call login instead of signup
-      await userService.login(this.state);     
+      await userService.signup(this.state); 
+      // Let <App> know a user has signed up!
       this.props.handleSignupOrLogin();
-      this.props.history.push('/');
+      this.props.history.push('/horoscope');
     } catch (err) {
-      // Use a modal or toast in your apps instead of alert
-      alert('Invalid Credentials!');
+      // Invalid user data (probably duplicate email)
+      this.props.updateMessage(err.message);
     }
   }
 

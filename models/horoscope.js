@@ -5,13 +5,6 @@ var mongoose = require('mongoose');
 
 
  var horoscopeSchema = new Schema({
-    // health: String,
-    // personalLife: String,
-    // travel: String,
-    // profession: String,
-    // luck: String,
-    // emotions: String,
-
     currentDate: Date,
     compatibility: String, 
     luckyNumber: Number,

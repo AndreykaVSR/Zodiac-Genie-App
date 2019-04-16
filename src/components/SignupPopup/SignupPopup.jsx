@@ -19,7 +19,7 @@ class SignupPopoup extends Component {
           {...this.props} 
           updateMessage={this.updateMessage} 
         />
-        {/* <p>{this.state.message}</p> */}
+        <p>{this.state.message}</p>
       </div>
     );
   }

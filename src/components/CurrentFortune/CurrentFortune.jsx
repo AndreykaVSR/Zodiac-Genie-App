@@ -45,7 +45,7 @@ const CurrentFortune = (props) => {
                 <li><span>Color:</span>  {props.color}</li><br/>
                 <li><span>Date Range:</span>  {props.dateRange}</li><br/>
                 <li><span>Mood:</span>  {props.mood}</li><br/>
-                <li><span className='DescriptionText'>Description:</span>  {props.description}</li><br/>
+                <li><span className='Descripton'>Description:</span>  {props.description}</li><br/>
             </div>
         </div>
     );

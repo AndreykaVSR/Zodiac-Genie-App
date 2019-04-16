@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CurrentFortune from '../CurrentFortune/CurrentFortune';
+import AnyDayFortune from '../AnyDayFortune/AnyDayFortune';
 
 class Horoscope extends Component {
     constructor(props){
@@ -34,6 +35,13 @@ class Horoscope extends Component {
         console.log(this.state.customHoroscope)
         }
 
+        handleChange = (e) => {
+            console.log(e.currentTarget.value)
+          this.setState({
+            [e.currentTarget.name]: e.currentTarget.value
+          })
+          }
+
     componentDidMount () { 
         this.horoscopeFetch().then((data) => {
             console.log(data);
@@ -46,6 +54,16 @@ class Horoscope extends Component {
           <div>
                 {/* <h1> Horoscope: </h1> */}
             <CurrentFortune
+                currentDate= {this.state.json.current_date}
+                compatibility= {this.state.json.compatibility}
+                luckyNumber= {this.state.json.lucky_number}
+                luckyTime= {this.state.json.lucky_time}
+                color= {this.state.json.color}
+                dateRange= {this.state.json.date_range}
+                mood= {this.state.json.mood}
+                description= {this.state.json.description}
+            /> 
+            <AnyDayFortune
                 currentDate= {this.state.json.current_date}
                 compatibility= {this.state.json.compatibility}
                 luckyNumber= {this.state.json.lucky_number}

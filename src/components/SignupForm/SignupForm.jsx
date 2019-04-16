@@ -6,6 +6,7 @@ import './SignupForm.css';
 class SignupForm extends Component {
 
   state = {
+    message: '',
     name: '',
     dob: '',
     email: '',
