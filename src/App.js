@@ -9,6 +9,7 @@ import userService from './utils/userService';
 // import horoscopeService from './utils/horoscopeService';
 // import aztroService from './utils/aztroService';
 import Horoscope from './components/Horoscope/Horoscope';
+import HoroscopePortals from './components/HoroscopePortals/HoroscopePortals';
 import './App.css';
 
 
@@ -80,6 +81,13 @@ class App extends Component {
             />
           }
           /> 
+          <Route path='/' render={({ history }) => 
+          <HoroscopePortals
+            history={history}
+            handleSignupOrLogin={this.handleSignupOrLogin}
+          />
+          }
+          />  
           <Route path='/login' render={({ history }) => 
             <LoginPage
               history={history}

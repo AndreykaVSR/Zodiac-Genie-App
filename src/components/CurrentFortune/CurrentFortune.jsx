@@ -52,4 +52,4 @@ const CurrentFortune = (props) => {
 }
 
 
-export default CurrentFortune;;
+export default CurrentFortune;
