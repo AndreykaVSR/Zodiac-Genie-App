@@ -25,22 +25,22 @@ const HoroscopePortals = (props) => {
 return (
     <div className="HoroscopePortals-container"> 
         <div className="HoroscopePortals">
-            <img src={Aquarius}/>Aquarius<br/>
-            <img src={Aries}/>Aries<br/>
-            <img src={Cancer}/>Cancer<br/>
-            <img src={Capricorn}/>Capricorn<br/>
+            <img src={Aries} alt="Aries"/>Aries<br/>
+            <img src={Taurus} alt="Taurus"/>Taurus<br/>
+            <img src={Gemini} alt="Gemini"/>Gemini<br/>
+            <img src={Cancer} alt="Cancer"/>Cancer<br/>
         </div>
         <div className="HoroscopePortals">
-            <img src={Gemini}/>Gemini<br/>
-            <img src={Leo}/>Leo<br/>
-            <img src={Libra}/>Libra<br/>
-            <img src={Pisces}/>Pisces<br/>
+            <img src={Leo} alt="Leo"/>Leo<br/>
+            <img src={Virgo} alt="Virgo"/>Virgo<br/>
+            <img src={Libra} alt="Libra"/>Libra<br/>
+            <img src={Scorpio} alt="Scorpio"/>Scorpio<br/>
         </div>
         <div className="HoroscopePortals">
-            <img src={Sagittarius}/>Sagittarius<br/>
-            <img src={Scorpio}/>Scorpio<br/>
-            <img src={Taurus}/>Taurus<br/>
-            <img src={Virgo}/>Virgo<br/>
+            <img src={Sagittarius} alt="Sagittarius"/>Sagittarius<br/>
+            <img src={Capricorn} alt="Capricorn"/>Capricorn<br/>
+            <img src={Aquarius} alt="Aquarius"/>Aquarius<br/>
+            <img src={Pisces} alt="Pisces"/>Pisces<br/>
         </div>
     </div>
 );
